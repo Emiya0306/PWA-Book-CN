@@ -1,0 +1,1374 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>5.2 添加到主屏幕 · PWA 实战</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5.3.html" />
+    
+    
+    <link rel="prev" href="5.1.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"SangKa","repo":"PWA-Book-CN","type":"star","size":"small","count":true},{"user":"SangKa","repo":"PWA-Book-CN","type":"watch","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">目录</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Part1.html">
+            
+                <a href="../Part1.html">
+            
+                    
+                    第1部分 | 定义 PWA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ch01/">
+            
+                <a href="../ch01/">
+            
+                    
+                    第1章 | 理解 PWA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../ch01/1.1.html">
+            
+                <a href="../ch01/1.1.html">
+            
+                    
+                    1.1 PWA 有什么优势？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../ch01/1.2.html">
+            
+                <a href="../ch01/1.2.html">
+            
+                    
+                    1.2 Service Workers: PWA 的关键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../ch01/1.3.html">
+            
+                <a href="../ch01/1.3.html">
+            
+                    
+                    1.3 性能洞察: Flipkart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../ch01/1.4.html">
+            
+                <a href="../ch01/1.4.html">
+            
+                    
+                    1.4 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../ch02/">
+            
+                <a href="../ch02/">
+            
+                    
+                    第2章 | 构建 PWA 的第一步
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../ch02/2.1.html">
+            
+                <a href="../ch02/2.1.html">
+            
+                    
+                    2.1 建立在现有基础之上
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../ch02/2.2.html">
+            
+                <a href="../ch02/2.2.html">
+            
+                    
+                    2.2 构建 PWA 的前端架构方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../ch02/2.3.html">
+            
+                <a href="../ch02/2.3.html">
+            
+                    
+                    2.3 逐步剖析现有的 PWA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../ch02/2.4.html">
+            
+                <a href="../ch02/2.4.html">
+            
+                    
+                    2.4 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../Part2.html">
+            
+                <a href="../Part2.html">
+            
+                    
+                    第2部分 | 更快的 Web 应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../ch03/">
+            
+                <a href="../ch03/">
+            
+                    
+                    第3章 | 缓存
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../ch03/3.1.html">
+            
+                <a href="../ch03/3.1.html">
+            
+                    
+                    3.1 HTTP 缓存基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../ch03/3.2.html">
+            
+                <a href="../ch03/3.2.html">
+            
+                    
+                    3.2 Service Workers 缓存基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../ch03/3.3.html">
+            
+                <a href="../ch03/3.3.html">
+            
+                    
+                    3.3 缓存前后的性能比对
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="../ch03/3.4.html">
+            
+                <a href="../ch03/3.4.html">
+            
+                    
+                    3.4 深入 Service Workers 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="../ch03/3.5.html">
+            
+                <a href="../ch03/3.5.html">
+            
+                    
+                    3.5 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../ch04/">
+            
+                <a href="../ch04/">
+            
+                    
+                    第4章 | 拦截网络请求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../ch04/4.1.html">
+            
+                <a href="../ch04/4.1.html">
+            
+                    
+                    4.1 Fetch API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../ch04/4.2.html">
+            
+                <a href="../ch04/4.2.html">
+            
+                    
+                    4.2 Fetch 事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="../ch04/4.3.html">
+            
+                <a href="../ch04/4.3.html">
+            
+                    
+                    4.3 Fetch 实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.4" data-path="../ch04/4.4.html">
+            
+                <a href="../ch04/4.4.html">
+            
+                    
+                    4.4 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../Part3.html">
+            
+                <a href="../Part3.html">
+            
+                    
+                    第3部分 | 吸引人的 Web 应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第5章 | 外观感受
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="5.1.html">
+            
+                <a href="5.1.html">
+            
+                    
+                    5.1 Web 应用清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.8.2" data-path="5.2.html">
+            
+                <a href="5.2.html">
+            
+                    
+                    5.2 添加到主屏幕
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.3" data-path="5.3.html">
+            
+                <a href="5.3.html">
+            
+                    
+                    5.3 添加到主屏幕的高级用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.4" data-path="5.4.html">
+            
+                <a href="5.4.html">
+            
+                    
+                    5.4 调试清单文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.5" data-path="5.5.html">
+            
+                <a href="5.5.html">
+            
+                    
+                    5.5 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../ch06/">
+            
+                <a href="../ch06/">
+            
+                    
+                    第6章 | 推送通知
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="../ch06/6.1.html">
+            
+                <a href="../ch06/6.1.html">
+            
+                    
+                    6.1 与用户互动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.2" data-path="../ch06/6.2.html">
+            
+                <a href="../ch06/6.2.html">
+            
+                    
+                    6.2 参与度洞见: Weather Channel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.3" data-path="../ch06/6.3.html">
+            
+                <a href="../ch06/6.3.html">
+            
+                    
+                    6.3 浏览器支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.4" data-path="../ch06/6.4.html">
+            
+                <a href="../ch06/6.4.html">
+            
+                    
+                    6.4 第一个推送通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.5" data-path="../ch06/6.5.html">
+            
+                <a href="../ch06/6.5.html">
+            
+                    
+                    6.5 第三方推送通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.6" data-path="../ch06/6.6.html">
+            
+                <a href="../ch06/6.6.html">
+            
+                    
+                    6.6 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    第4部分 | 有弹性的 Web 应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    第7章 | 离线浏览
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.11.1" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    7.1 解锁缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11.2" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    7.2 几个需要注意的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11.3" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    7.3 离线用户体验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11.4" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    7.4 跟踪离线使用情况
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11.5" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    7.5 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    第8章 | 构建更富弹性的应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.12.1" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    8.1 现代网站所面临的网络问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12.2" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    8.2 Service Workers 来挽救
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12.3" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    8.3 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    第9章 | 保持数据同步
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.13.1" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    9.1 理解后台同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13.2" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    9.2 通知用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13.3" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    9.3 定期同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13.4" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    9.4 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    第5部分 | PWA 的未来
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    第10章 | 流式数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.15.1" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    10.1 理解 Web Streams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15.2" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    10.2 基础示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15.3" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    10.3 页面渲染加速
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15.4" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    10.4 Web Stream API 的未来
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15.5" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    10.5 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    第11章 | 前程似锦
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.16.1" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    11.1 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16.2" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    11.2 Web 蓝牙技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16.3" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    11.3 Web 分享 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16.4" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    11.4 支付请求 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16.5" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    11.5 硬件访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16.6" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    11.6 硬件: 形状检测 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16.7" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    11.7 下一步呢？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16.8" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    11.8 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    第12章 | PWA 故障排除
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.17.1" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    12.1 添加到主屏幕
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17.2" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    12.2 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17.3" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    12.3 调试 Service Worker 的具体问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17.4" data-path="../Unopen.html">
+            
+                <a href="../Unopen.html">
+            
+                    
+                    12.4 总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >5.2 添加到主屏幕</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="52-&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;">5.2 &#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;</h2>
+<p>&#x5F53;&#x6211;&#x5728;&#x5FD9;&#x65F6;&#xFF0C;&#x5E76;&#x4E14;&#x9700;&#x8981;&#x5FEB;&#x901F;&#x8BBF;&#x95EE;&#x5E94;&#x7528;&#xFF0C;&#x53EA;&#x9700;&#x6253;&#x5F00;&#x4E3B;&#x5C4F;&#x5E55;&#xFF0C;&#x8F7B;&#x6309;&#x4E00;&#x4E0B;&#x56FE;&#x6807;&#x5C31;&#x53EF;&#x4EE5;&#x7ACB;&#x5373;&#x6253;&#x5F00;&#x3002;&#x5BF9;&#x4E8E;&#x8BBE;&#x5907;&#x4E0A;&#x5DF2;&#x5B89;&#x88C5;&#x7684;&#x539F;&#x751F;&#x5E94;&#x7528;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x79CD;&#x884C;&#x4E3A;&#x51E0;&#x4E4E;&#x662F;&#x9ED8;&#x8BA4;&#x7684;&#x3002;&#x4F5C;&#x4E3A; Web &#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x5438;&#x5F15;&#x7528;&#x6237;&#x5E76;&#x80FD;&#x8BA9;&#x4ED6;&#x4EEC;&#x7ECF;&#x5E38;&#x6765;&#x6D4F;&#x89C8;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x540C;&#x6837;&#x7684;&#x529F;&#x80FD;&#xFF01; &#x8FD9;&#x662F;&#x201C;&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#x201D;&#x529F;&#x80FD;&#x8BDE;&#x751F;&#x7684;&#x539F;&#x56E0;&#x3002;</p>
+<p>&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A; &#x201C;Web &#x5E94;&#x7528;&#x5B89;&#x88C5;&#x64CD;&#x4F5C;&#x680F;&#x201D;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5FEB;&#x901F;&#x65E0;&#x7F1D;&#x5730;&#x5C06; Web &#x5E94;&#x7528;&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#x7684;&#x7EDD;&#x4F73;&#x65B9;&#x6CD5;&#x3002;&#x4E3A;&#x4E86;&#x786E;&#x4FDD;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x5730;&#x8BBF;&#x95EE;&#x7F51;&#x7AD9;&#xFF0C;&#x6B64;&#x529F;&#x80FD;&#x4F1A;&#x663E;&#x793A;&#x63D0;&#x793A;&#xFF0C;&#x8BE2;&#x95EE;&#x7528;&#x6237;&#x662F;&#x5426;&#x8981;&#x5C06; Web &#x5E94;&#x7528;&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;&#x63A5;&#x53D7;&#xFF0C;&#x4E00;&#x4E2A;&#x56FE;&#x6807;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x8BBE;&#x5907;&#x7684;&#x4E3B;&#x5C4F;&#x5E55;&#x4E0A;&#xFF0C;&#x6B64;&#x56FE;&#x6807;&#x5F15;&#x7528;&#x4E86;&#x5E94;&#x7528;&#x7684; URL &#x3002;&#x6B64;&#x540E;&#x8BBF;&#x95EE; Web &#x5E94;&#x7528;&#x53EA;&#x9700;&#x624B;&#x6307;&#x8F7B;&#x8F7B;&#x4E00;&#x6309;&#x3002;</p>
+<p><img src="../assets/figure5.2.png" alt="Figure 5.2"></p>
+<p><strong>&#x56FE;5.2 &#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#x529F;&#x80FD;&#x662F;&#x4E0E;&#x7528;&#x6237;&#x4E92;&#x52A8;&#x5E76;&#x8BA9;&#x4ED6;&#x4EEC;&#x7ECF;&#x5E38;&#x6D4F;&#x89C8;&#x7684;&#x597D;&#x65B9;&#x6CD5;</strong></p>
+<p>&#x5728;&#x672C;&#x4E66;&#x7684;&#x7B2C;1&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x8FC7;&#x4E86;&#x5370;&#x5EA6;&#x4E00;&#x5BB6;&#x516C;&#x53F8; Flipkart &#x4EE5;&#x53CA;&#x4ED6;&#x4EEC;&#x662F;&#x5982;&#x4F55;&#x6784;&#x5EFA;&#x540D;&#x4E3A; Flipkart Lite &#x7684; PWA &#x7684;&#x3002;Flipkart &#x60F3;&#x8981;&#x4ED6;&#x4EEC;&#x7684;&#x79FB;&#x52A8;&#x7528;&#x6237;&#x4EAB;&#x53D7;&#x4E0D;&#x900A;&#x8272;&#x4E8E;&#x539F;&#x751F;&#x5E94;&#x7528;&#x7684;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x3002;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#x529F;&#x80FD;&#xFF0C;Flipkart Lite &#x6240;&#x6709;&#x8BBF;&#x95EE;&#x7684;60&#xFF05;&#x5747;&#x6765;&#x81EA;&#x4E3B;&#x5C4F;&#x5E55;&#x56FE;&#x6807;&#x542F;&#x52A8;&#x3002;&#x8FD9;&#x9879;&#x529F;&#x80FD;&#x8FD8;&#x610F;&#x5473;&#x7740;&#x4ED6;&#x4EEC;&#x7684;&#x5BA2;&#x6237;&#x8F6C;&#x5316;&#x7387;&#x63D0;&#x5347;&#x4E86;70%&#x3002;&#x4EC5;&#x8FD9;&#x4E24;&#x9879;&#x6D3B;&#x52A8;&#x5C31;&#x4F7F;&#x53C2;&#x4E0E;&#x4EBA;&#x6570;&#x6BD4;&#x4EE5;&#x524D;&#x9AD8;&#x4E86;40%!</p>
+<p><img src="../assets/figure5.3.png" alt="Figure 5.3"></p>
+<p><strong>&#x56FE;5.3 &#x4F7F;&#x7528;&#x6B63;&#x786E;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4F1A;&#x63D0;&#x793A;&#x7528;&#x6237;&#x662F;&#x5426;&#x5C06;&#x4F60;&#x7684; Web &#x5E94;&#x7528;&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;</strong></p>
+<p>&#x5728;&#x56FE;5.3&#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5F53;&#x7528;&#x6237;&#x5355;&#x51FB;&#x4E3B;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x56FE;&#x6807;&#x65F6;&#x53D1;&#x751F;&#x7684;&#x4E0D;&#x540C;&#x6B65;&#x9AA4;&#x3002;&#x5728;&#x5DE6;&#x4FA7;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x56FE;&#x6807;&#x3002;&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x5B83;&#x65F6;&#xFF0C;&#x5B83;&#x4EEC;&#x5C06;&#x5728;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x65F6;&#x663E;&#x793A;&#x542F;&#x52A8;&#x9875;&#x9762;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x6839;&#x636E;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x8BBE;&#x7F6E;&#xFF0C;Web &#x5E94;&#x7528;&#x5C06;&#x4F1A;&#x5448;&#x73B0;&#x3002;( &#x8BD1;&#x8005;&#x6CE8;: &#x8FD9;&#x6BB5;&#x611F;&#x89C9;&#x56FE;&#x6587;&#x4E0D;&#x7B26; &#x6216;&#x8005;&#x662F;&#x6211;&#x6CA1;&#x9886;&#x609F;:&lt; )</p>
+<p>&#x4ECE;&#x5F00;&#x53D1;&#x8005;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x770B;&#xFF0C;&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#x529F;&#x80FD;&#x6700;&#x68D2;&#x7684;&#x662F;&#x51E0;&#x4E4E;&#x4E0D;&#x7528;&#x5199;&#x4EFB;&#x4F55;&#x4EE3;&#x7801;&#x4FBF;&#x53EF;&#x5B9E;&#x73B0;&#x529F;&#x80FD;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x5DF2;&#x7ECF;&#x4E3A;&#x4F60;&#x505A;&#x597D;&#x4E86;&#x8FD9;&#x4E00;&#x5207;&#x3002;</p>
+<p>&#x5728;&#x4F60;&#x8FC7;&#x4E8E;&#x6FC0;&#x52A8;&#x4E4B;&#x524D;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x77E5;&#x9053;&#x5728;&#x663E;&#x793A;&#x201C;&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#x201D;&#x63D0;&#x793A;&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x6EE1;&#x8DB3;&#x51E0;&#x4E2A;&#x6761;&#x4EF6;:</p>
+<ol>
+<li>&#x9700;&#x8981; manifest.json &#x6587;&#x4EF6;</li>
+<li>&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x9700;&#x8981;&#x542F;&#x52A8; URL</li>
+<li>&#x9700;&#x8981; 144x144 &#x7684; PNG &#x56FE;&#x6807;</li>
+<li>&#x7F51;&#x7AD9;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x901A;&#x8FC7; HTTPS &#x8FD0;&#x884C;&#x7684; Service Worker</li>
+<li>&#x7528;&#x6237;&#x9700;&#x8981;&#x81F3;&#x5C11;&#x6D4F;&#x89C8;&#x7F51;&#x7AD9;&#x4E24;&#x6B21;&#xFF0C;&#x5E76;&#x4E14;&#x4E24;&#x6B21;&#x8BBF;&#x95EE;&#x95F4;&#x9694;&#x5728;&#x4E94;&#x5206;&#x949F;&#x4E4B;&#x4E0A;</li>
+</ol>
+<p>&#x4E0A;&#x8FF0;&#x6761;&#x4EF6;&#x4E2D;&#xFF0C;&#x7B2C;5&#x70B9;&#x6216;&#x8BB8;&#x662F;&#x6700;&#x91CD;&#x8981;&#x7684;&#x3002;&#x7528;&#x6237;&#x81F3;&#x5C11;&#x8BBF;&#x95EE;&#x8FC7;&#x7F51;&#x7AD9;&#x4E24;&#x6B21;&#x5E76;&#x4E14;&#x4E24;&#x6B21;&#x4E4B;&#x95F4;&#x7684;&#x95F4;&#x9694;&#x5728;&#x4E94;&#x5206;&#x949F;&#x4E4B;&#x4E0A;&#xFF0C;&#x63D0;&#x793A;&#x624D;&#x4F1A;&#x51FA;&#x73B0;&#xFF0C;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x539F;&#x56E0;&#x662F;&#x4E3A;&#x4E86;&#x786E;&#x4FDD;&#x8FD9;&#x9879;&#x529F;&#x80FD;&#x4E0D;&#x4F1A;&#x8BA9;&#x4EBA;&#x53CD;&#x611F;&#x3002;&#x60F3;&#x50CF;&#x4E00;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8BBF;&#x95EE;&#x8FC7;&#x7684;&#x6BCF;&#x4E2A;&#x7F51;&#x7AD9;&#x90FD;&#x4F7F;&#x7528;&#x4E86;&#x8FD9;&#x9879;&#x6280;&#x672F;&#xFF0C;&#x5E76;&#x4E14;&#x6BCF;&#x4E2A;&#x9875;&#x9762;&#x90FD;&#x4F1A;&#x63D0;&#x793A;&#x201C;&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#x201D;&#xFF1F;&#x5B83;&#x5F88;&#x5FEB;&#x5C31;&#x4F1A;&#x53D8;&#x5F97;&#x4EE4;&#x4EBA;&#x53CD;&#x611F;&#xFF0C;&#x800C; &#x6D4F;&#x89C8;&#x5668;&#x5382;&#x5546;&#x4E5F;&#x4F1A;&#x53D1;&#x73B0;&#x81EA;&#x5DF1;&#x5728;&#x4F5C;&#x8327;&#x81EA;&#x7F1A;&#xFF01;</p>
+<p>&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x4E5F;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x5185;&#x7F6E;&#x7684;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4F60;&#x65E0;&#x6CD5;&#x63A7;&#x5236;&#x4E0A;&#x8FF0;&#x6761;&#x4EF6;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x968F;&#x7740;&#x672C;&#x7AE0;&#x7684;&#x5B66;&#x4E60;&#xFF0C;&#x4F60;&#x5C06;&#x5B66;&#x4E60;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x53EF;&#x4F7F;&#x4F60;&#x5BF9;&#x63D0;&#x793A;&#x51FA;&#x73B0;&#x7684;&#x65F6;&#x95F4;&#x548C;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5FAE;&#x8C03;&#x63A7;&#x5236;&#x3002;</p>
+<h3 id="521-&#x5B9A;&#x5236;&#x56FE;&#x6807;">5.2.1 &#x5B9A;&#x5236;&#x56FE;&#x6807;</h3>
+<p>&#x7528;&#x6237;&#x88AB;&#x63D0;&#x793A;&#x662F;&#x5426;&#x6DFB;&#x52A0; Web &#x5E94;&#x7528;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#x5E76;&#x4E14;&#x63A5;&#x53D7;&#x540E;&#xFF0C;&#x4ED6;&#x4EEC;&#x9996;&#x5148;&#x770B;&#x5230;&#x7684;&#x5C31;&#x662F;&#x51FA;&#x73B0;&#x5728;&#x4E3B;&#x5C4F;&#x5E55;&#x7684;&#x56FE;&#x6807;&#x3002;&#x628A;&#x8FD9;&#x9879;&#x914D;&#x7F6E;&#x6DFB;&#x52A0;&#x5230; manifest.json &#x6587;&#x4EF6;&#x4E2D;&#x5F88;&#x5BB9;&#x6613;&#xFF0C;&#x5982;&#x6E05;&#x5355;5.3&#x6240;&#x793A;&#x3002;</p>
+<h5 id="&#x4EE3;&#x7801;&#x6E05;&#x5355;-53">&#x4EE3;&#x7801;&#x6E05;&#x5355; 5.3</h5>
+<pre class="language-"><code class="lang-json"><span class="token property">&quot;icons&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;src&quot;</span><span class="token operator">:</span> <span class="token string">&quot;homescreen.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sizes&quot;</span><span class="token operator">:</span> <span class="token string">&quot;144x144&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;image/png&quot;</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4E3A;&#x7B80;&#x6D01;&#x8D77;&#x89C1;&#xFF0C;&#x5728;&#x6E05;&#x5355;5.3&#x4E2D;&#xFF0C;&#x6211;&#x7B80;&#x5316;&#x4E86;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x53EA;&#x663E;&#x793A; <code>icons</code> &#x7684;&#x90E8;&#x5206;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728; icons &#x6570;&#x7EC4;&#x4E2D;&#x63D0;&#x4F9B;&#x4E0D;&#x540C;&#x5C3A;&#x5BF8;&#x7684;&#x56FE;&#x6807;&#x5217;&#x8868;&#xFF0C;&#x8FD9;&#x4E9B;&#x56FE;&#x6807;&#x53EF;&#x4EE5;&#x5728;&#x5404;&#x79CD;&#x73AF;&#x5883;&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x8BBE;&#x5907;&#x663E;&#x793A;&#x4E0D;&#x540C;&#x7684;&#x56FE;&#x6807;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5B83;&#x4EEC;&#x53EF;&#x7528;&#x4E8E;&#x5728;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x7684;&#x5217;&#x8868;&#x4E2D;&#x4EE3;&#x8868;&#x8BE5; Web &#x5E94;&#x7528;&#xFF0C;&#x6216;&#x5C06; Web &#x5E94;&#x7528;&#x4E8E; OS &#x7684;&#x4EFB;&#x52A1;&#x5207;&#x6362;&#x5668;&#x6216;&#x7CFB;&#x7EDF;&#x504F;&#x597D;&#x8FDB;&#x884C;&#x96C6;&#x6210;&#x3002;</p>
+<p><img src="../assets/figure5.4.png" alt="Figure 5.4"></p>
+<p><strong>&#x56FE;5.4 &#x4F7F;&#x7528;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x6765;&#x5B9A;&#x5236; Web &#x5E94;&#x7528;&#x610F;&#x5473;&#x7740;&#x5B83;&#x53EF;&#x4EE5;&#x4E0E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x96C6;&#x6210;&#x4EE5;&#x63D0;&#x4F9B;&#x771F;&#x6B63;&#x7684;&#x201C;&#x5E94;&#x7528;&#x5F0F;&#x201D;&#x7684;&#x611F;&#x89C9;</strong></p>
+<p>&#x5728;&#x6211;&#x4EEC;&#x7684;&#x793A;&#x4F8B;&#x5E94;&#x7528; Progressive Times &#x4E2D;&#xFF0C;&#x6211;&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x4E86;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x5E76;&#x5F15;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x5B89;&#x88C5;&#x5728;&#x4E3B;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x56FE;&#x6807;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728; <a href="https://bit.ly/chapter-pwa-5" target="_blank">bit.ly/chapter-pwa-5</a> &#x627E;&#x5230;&#x6240;&#x6709;&#x4EE3;&#x7801;&#x3002;&#x4E00;&#x65E6;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#xFF0C;&#x8BE5;&#x56FE;&#x6807;&#x5E94;&#x8BE5;&#x51FA;&#x73B0;&#x5728;&#x7528;&#x6237;&#x8BBE;&#x5907;&#x7684;&#x4E3B;&#x5C4F;&#x5E55;&#x4E0A;&#xFF0C;&#x5982;&#x56FE;5.5&#x6240;&#x793A;&#x3002;</p>
+<p><img src="../assets/figure5.5.png" alt="Figure 5.5"></p>
+<p><strong>&#x56FE;5.5 &#x4E3B;&#x5C4F;&#x5E55;&#x4E0A;&#x663E;&#x793A;&#x7684;&#x56FE;&#x6807;&#x4E0E; Web &#x5E94;&#x7528;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x56FE;&#x6807;&#x76F8;&#x5339;&#x914D;</strong></p>
+<h3 id="522-&#x6DFB;&#x52A0;&#x542F;&#x52A8;&#x9875;&#x9762;">5.2.2 &#x6DFB;&#x52A0;&#x542F;&#x52A8;&#x9875;&#x9762;</h3>
+<p>&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x4E3B;&#x5C4F;&#x5E55;&#x4E0A;&#x7684; Web &#x5E94;&#x7528;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x6E32;&#x67D3;&#x9875;&#x9762;&#x7684;&#x7B2C;&#x4E00;&#x5E27;&#x65F6;&#xFF0C;&#x5C06;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x7684;&#x201C;&#x542F;&#x52A8;&#x9875;&#x9762;&#x201D;&#x3002;&#x542F;&#x52A8;&#x9875;&#x9762;&#x65E8;&#x5728;&#x63D0;&#x9AD8;&#x7F51;&#x7AD9;&#x52A0;&#x8F7D;&#x7684;&#x611F;&#x77E5;&#x6027;&#x80FD;&#xFF0C;&#x5E76;&#x53EF;&#x5E2E;&#x52A9;&#x7528;&#x6237;&#x611F;&#x89C9;&#x7F51;&#x7AD9;&#x7684;&#x52A0;&#x8F7D;&#x901F;&#x5EA6;&#x6BD4;&#x5B9E;&#x9645;&#x901F;&#x5EA6;&#x8981;&#x5FEB;&#x4E00;&#x4E9B;&#x3002;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x51C6;&#x5907;&#x597D;&#x540E;&#xFF0C;&#x7EDD;&#x5927;&#x90E8;&#x5206;&#x529F;&#x80FD;&#x90FD;&#x662F;&#x5373;&#x5F00;&#x5373;&#x7528;&#x7684;&#x3002;&#x6E05;&#x5355;5.4&#x63D0;&#x4F9B;&#x4E86;&#x4F60;&#x6240;&#x9700;&#x7684;&#x57FA;&#x7840;&#x4EE3;&#x7801;&#x3002;</p>
+<h5 id="&#x4EE3;&#x7801;&#x6E05;&#x5355;-54">&#x4EE3;&#x7801;&#x6E05;&#x5355; 5.4</h5>
+<pre class="language-"><code class="lang-json"><span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Progressive Times web app&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;theme_color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#FFDF00&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;background_color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#FFDF00&quot;</span><span class="token punctuation">,</span>       &#x2776;
+<span class="token property">&quot;icons&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;src&quot;</span><span class="token operator">:</span> <span class="token string">&quot;homescreen.png&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;sizes&quot;</span><span class="token operator">:</span> <span class="token string">&quot;192x192&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;image/png&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre>
+<ul>
+<li>&#x2776; name &#x548C; background_color &#x5C5E;&#x6027;&#x7528;&#x6765;&#x663E;&#x793A;&#x542F;&#x52A8;&#x9875;&#x9762;</li>
+</ul>
+<p>&#x542F;&#x52A8;&#x9875;&#x9762;&#x662F;&#x6839;&#x636E;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x4FE1;&#x606F;&#x52A8;&#x6001;&#x751F;&#x6210;&#x7684;&#x3002;&#x5B83;&#x4F7F;&#x7528;&#x4E86; <code>name</code> &#x548C; <code>background_color</code> &#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x4EE5;&#x53CA;&#x6D4F;&#x89C8;&#x5668;&#x6839;&#x636E;&#x5728; <code>icons</code> &#x6570;&#x7EC4;&#x4E2D;&#x9009;&#x62E9;&#x5C3A;&#x5BF8;&#x6700;&#x5408;&#x9002;&#x7684;&#x56FE;&#x6807;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x6E05;&#x5355;5.4&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x6CE8;&#x610F;&#x5230;&#x542F;&#x52A8;&#x9875;&#x9762;&#x7C7B;&#x4F3C;&#x4E8E;&#x4E0B;&#x56FE;&#x3002;</p>
+<p><img src="../assets/figure5.6.png" alt="Figure 5.6"></p>
+<p><strong>&#x56FE;5.6 &#x542F;&#x52A8;&#x9875;&#x9762;&#x4F7F;&#x7528; name &#x548C; background_color &#x8FD9;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#x6765;&#x8BBE;&#x8BA1;&#x5B83;&#x7684;&#x5916;&#x89C2;</strong></p>
+<h3 id="522-&#x8BBE;&#x7F6E;&#x542F;&#x52A8;&#x6837;&#x5F0F;&#x548C;-url">5.2.2 &#x8BBE;&#x7F6E;&#x542F;&#x52A8;&#x6837;&#x5F0F;&#x548C; URL</h3>
+<p>&#x6700;&#x540E;&#xFF0C;&#x4E3A;&#x4E86;&#x7ED9;&#x6DFB;&#x52A0;&#x5230;&#x4E3B;&#x5C4F;&#x5E55;&#x529F;&#x80FD;&#x9526;&#x4E0A;&#x6DFB;&#x82B1;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x663E;&#x793A;&#x6A21;&#x5F0F;&#x548C;&#x542F;&#x52A8; URL &#x3002;&#x663E;&#x793A;&#x6A21;&#x5F0F;&#x51B3;&#x5B9A;&#x4E86;&#x4F60;&#x60F3;&#x5982;&#x4F55;&#x5728;&#x7528;&#x6237;&#x7684;&#x8BBE;&#x5907;&#x4E0A;&#x5448;&#x73B0;&#x4F60;&#x7684; Web &#x5E94;&#x7528;&#xFF0C;&#x542F;&#x52A8; URL &#x662F;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x4E3B;&#x5C4F;&#x5E55;&#x56FE;&#x6807;&#x65F6;&#x5C06;&#x767B;&#x9646;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x3002;</p>
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x503C;&#x90FD;&#x5728;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#x3002;</p>
+<h5 id="&#x4EE3;&#x7801;&#x6E05;&#x5355;-55">&#x4EE3;&#x7801;&#x6E05;&#x5355; 5.5</h5>
+<pre class="language-"><code class="lang-json"><span class="token property">&quot;start_url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/index.html&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;display&quot;</span><span class="token operator">:</span> <span class="token string">&quot;standalone&quot;</span><span class="token punctuation">,</span>
+</code></pre>
+<p>&#x5728;&#x6E05;&#x5355;5.5&#x4E2D;&#xFF0C;<code>start_url</code> &#x7528;&#x6765;&#x6307;&#x5B9A;&#x5F53;&#x7528;&#x6237;&#x4ECE;&#x8BBE;&#x5907;&#x542F;&#x52A8;&#x5E94;&#x7528;&#x65F6;&#x52A0;&#x8F7D;&#x7684; URL &#x3002;&#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x7684;&#x662F;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x90A3;&#x4E48;&#x57FA;&#x7840;&#x8DEF;&#x5F84;&#x5C31;&#x662F;&#x6E05;&#x5355;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8FFD;&#x8E2A;&#x6709;&#x591A;&#x5C11;&#x4EBA;&#x662F;&#x901A;&#x8FC7;&#x4E3B;&#x5C4F;&#x5E55;&#x56FE;&#x6807;&#x8BBF;&#x95EE;&#x7F51;&#x7AD9;&#x7684;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x8981;&#x5728;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x8FFD;&#x52A0;&#x8FFD;&#x8E2A;&#x4EE3;&#x7801;&#xFF0C;&#x6BD4;&#x5982; <code>/index.html?homescreen=1</code> &#x8FD9;&#x6837;&#x7684; URL &#x3002;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#xFF0C;&#x4F60;&#x7684; Web &#x5206;&#x6790;&#x8F6F;&#x4EF6;&#x5305;&#x5C31;&#x53EF;&#x4EE5;&#x5206;&#x8FA8;&#x51FA;&#x901A;&#x8FC7;&#x4E3B;&#x5C4F;&#x5E55;&#x56FE;&#x6807;&#x5230;&#x8FBE;&#x7684;&#x7528;&#x6237;&#x3002;</p>
+<p>&#x5173;&#x4E8E; Web &#x5E94;&#x7528;&#x5982;&#x4F55;&#x663E;&#x793A;&#x5728;&#x7528;&#x6237;&#x7684;&#x8BBE;&#x5907;&#x4E0A;&#xFF0C;&#x8FD8;&#x6709;&#x51E0;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x9009;&#x9879;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x6700;&#x7B26;&#x5408;&#x9700;&#x6C42;&#x7684;&#x663E;&#x793A;&#x6A21;&#x5F0F;&#x3002;&#x663E;&#x793A;&#x6A21;&#x5F0F;&#x8868;&#x793A; Web &#x5E94;&#x7528;&#x5728;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;&#x4E2D;&#x7684;&#x5C55;&#x73B0;&#x65B9;&#x5F0F;: fullscreen&#x3001;standalone&#x3001;minimal-ui &#x6216; browser &#x3002;</p>
+<p>&#x6BCF;&#x79CD;&#x663E;&#x793A;&#x6A21;&#x5F0F;&#x5BF9; Web &#x5E94;&#x7528;&#x7684;&#x5F71;&#x54CD;&#x5982;&#x4E0B;:</p>
+<ul>
+<li><strong>Fullscreen</strong> - &#x6253;&#x5F00; Web &#x5E94;&#x7528;&#x5E76;&#x5360;&#x7528;&#x6574;&#x4E2A;&#x53EF;&#x7528;&#x7684;&#x663E;&#x793A;&#x533A;&#x57DF;&#x3002;</li>
+<li><strong>Standalone</strong> - &#x6253;&#x5F00; Web &#x5E94;&#x7528;&#x4EE5;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x539F;&#x751F;&#x5E94;&#x7528;&#x3002;&#x6B64;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x7528;&#x6237;&#x4EE3;&#x7406;&#x5C06;&#x6392;&#x9664;&#x8BF8;&#x5982; URL &#x680F;&#x7B49;&#x6807;&#x51C6;&#x6D4F;&#x89C8;&#x5668; UI &#x5143;&#x7D20;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x5305;&#x62EC;&#x8BF8;&#x5982;&#x72B6;&#x6001;&#x680F;&#x548C;&#x7CFB;&#x7EDF;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#x7684;&#x5176;&#x4ED6;&#x7CFB;&#x7EDF; UI &#x5143;&#x7D20;&#x3002;</li>
+<li><strong>Minimal-ui</strong> - &#x6B64;&#x6A21;&#x5F0F;&#x7C7B;&#x4F3C;&#x4E8E; fullscreen&#xFF0C;&#x4F46;&#x4E3A;&#x7EC8;&#x7AEF;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E86;&#x53EF;&#x8BBF;&#x95EE;&#x7684;&#x6700;&#x5C0F; UI &#x5143;&#x7D20;&#x96C6;&#x5408;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x540E;&#x9000;&#x6309;&#x94AE;&#x3001;&#x524D;&#x8FDB;&#x6309;&#x94AE;&#x3001;&#x91CD;&#x8F7D;&#x6309;&#x94AE;&#x4EE5;&#x53CA;&#x67E5;&#x770B;&#x7F51;&#x9875;&#x5730;&#x5740;&#x7684;&#x4E00;&#x4E9B;&#x65B9;&#x5F0F;&#x3002;</li>
+<li><strong>Browser</strong> - &#x4F7F;&#x7528;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5185;&#x7F6E;&#x7684;&#x6807;&#x51C6;&#x6D4F;&#x89C8;&#x5668;&#x6765;&#x6253;&#x5F00; Web &#x5E94;&#x7528;&#x3002;</li>
+</ul>
+<p>&#x5728; Web &#x5E94;&#x7528;&#x6E05;&#x5355;&#x4E2D;&#xFF0C;display &#x5C5E;&#x6027;&#x662F;&#x53EF;&#x9009;&#x9879;&#xFF0C;&#x9ED8;&#x8BA4;&#x5B83;&#x4F1A;&#x4EE5; browser &#x6A21;&#x5F0F;&#x6765;&#x663E;&#x793A;&#x3002;&#x8FD9;&#x4E9B;&#x4E0D;&#x540C;&#x7684;&#x663E;&#x793A;&#x6A21;&#x5F0F;&#x4E3A;&#x5F00;&#x53D1;&#x8005;&#x5F00;&#x8F9F;&#x4E86;&#x4E00;&#x4E2A;&#x5145;&#x6EE1;&#x53EF;&#x80FD;&#x6027;&#x7684;&#x4E16;&#x754C;&#xFF0C;&#x91CD;&#x8981;&#x7684;&#x662F;&#x4F60;&#x60F3;&#x8981; Web &#x5E94;&#x7528;&#x4EE5;&#x4F55;&#x79CD;&#x65B9;&#x5F0F;&#x51FA;&#x73B0;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684; Web &#x5E94;&#x7528;&#x662F;&#x6E38;&#x620F;&#xFF0C;&#x4F7F;&#x7528; <code>standalone</code> &#x663E;&#x793A;&#x6A21;&#x5F0F;&#x66F4;&#x9002;&#x5408;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD; Web &#x5E94;&#x7528;&#x7528;&#x8D77;&#x6765;&#x66F4;&#x8EAB;&#x4E34;&#x5176;&#x5883;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7684; Web &#x5E94;&#x7528;&#x662F;&#x5728;&#x7EBF;&#x51FA;&#x7248;&#x7269;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x9009;&#x62E9; <code>minimal-ui</code> &#x6216; <code>fullscreen</code> &#x663E;&#x793A;&#x6A21;&#x5F0F;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;&#x4E13;&#x6CE8;&#x4E8E;&#x6587;&#x672C;&#x800C;&#x6D88;&#x9664;&#x5E72;&#x6270;&#x3002;&#x5B8C;&#x5168;&#x5728;&#x4E8E;&#x4F60;&#x7684;&#x638C;&#x63A7;&#xFF0C;&#x4F46;&#x8981;&#x8BB0;&#x4F4F;&#x65E0;&#x8BBA;&#x9009;&#x62E9;&#x54EA;&#x79CD;&#x98CE;&#x683C;&#x90FD;&#x4F1A;&#x5F71;&#x54CD; Web &#x5E94;&#x7528;&#x7684;&#x611F;&#x53D7;&#xFF0C;&#x6240;&#x4EE5;&#x8BF7;&#x505A;&#x51FA;&#x660E;&#x667A;&#x7684;&#x9009;&#x62E9;&#xFF01;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5.1.html" class="navigation navigation-prev " aria-label="Previous page: 5.1 Web 应用清单">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5.3.html" class="navigation navigation-next " aria-label="Next page: 5.3 添加到主屏幕的高级用法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5.2 添加到主屏幕","level":"2.8.2","depth":2,"next":{"title":"5.3 添加到主屏幕的高级用法","level":"2.8.3","depth":2,"path":"ch05/5.3.md","ref":"./ch05/5.3.md","articles":[]},"previous":{"title":"5.1 Web 应用清单","level":"2.8.1","depth":2,"path":"ch05/5.1.md","ref":"./ch05/5.1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","highlight","copy-code-button","edit-link","github","github-buttons"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/SangKa/PWA-Book-CN"},"search":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"SangKa","repo":"PWA-Book-CN","type":"star","size":"small","count":true},{"user":"SangKa","repo":"PWA-Book-CN","type":"watch","size":"small","count":true}]},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"帮忙纠错","base":"https://github.com/SangKa/PWA-Book-CN/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PWA 实战","gitbook":"3.1.1"},"file":{"path":"ch05/5.2.md","mtime":"2017-12-03T08:48:50.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-12-03T09:31:27.031Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
